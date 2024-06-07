@@ -1,0 +1,40 @@
+﻿  DisplayCtrl.cpp
+  hdmiTest.c
+  HmiMain.cpp
+  lampStartegy.cpp
+  MenuDisplay.cpp
+..\..\..\src\HmiMain.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+..\..\..\src\MenuDisplay.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+..\..\..\src\DisplayCtrl.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\tcc8973_a301\buildsystem-tcc897x\src\kanzi_a301\application\src\lampStartegy.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\..\..\src\lampStartegy.cpp)
+d:\tcc8973_a301\buildsystem-tcc897x\src\kanzi_a301\application\src\MenuDisplay.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\..\..\src\MenuDisplay.cpp)
+d:\tcc8973_a301\buildsystem-tcc897x\src\kanzi_a301\application\src\WarnIdDefine.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\..\..\src\lampStartegy.cpp)
+D:\tcc8973_a301\buildsystem-tcc897x\src\midware\include\DataDefine.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\..\..\src\lampStartegy.cpp)
+..\..\..\src\hdmiTest.c(2): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
+D:\tcc8973_a301\buildsystem-tcc897x\src\midware\include\DataDefine.h(96): error C2059: 语法错误:“enum [tag]” (..\..\..\src\lampStartegy.cpp)
+D:\tcc8973_a301\buildsystem-tcc897x\src\midware\include\DataDefine.h(96): error C3805: “enum [tag]”:  意外标记，应输入“}”或者“,” (..\..\..\src\lampStartegy.cpp)
+d:\tcc8973_a301\buildsystem-tcc897x\src\kanzi_a301\application\src\lampStartegy.h(5): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory (..\..\..\src\lampStartegy.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(286): error C2653: “Light”: 不是类或命名空间名称 (..\..\..\src\MenuDisplay.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(286): error C2061: 语法错误: 标识符“Type” (..\..\..\src\MenuDisplay.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2653: “Light”: 不是类或命名空间名称 (..\..\..\src\MenuDisplay.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2065: “TypeCount”: 未声明的标识符 (..\..\..\src\MenuDisplay.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2975: “_Size”:“std::array”的模板参数无效，应为编译时常量表达式 (..\..\..\src\MenuDisplay.cpp)
+          D:\Microsoft Visual Studio 12.0\VC\include\array(18) : 参见“_Size”的声明
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(288): error C2065: “lightType”: 未声明的标识符 (..\..\..\src\MenuDisplay.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(286): error C2653: “Light”: 不是类或命名空间名称 (..\..\..\src\HmiMain.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(286): error C2061: 语法错误: 标识符“Type” (..\..\..\src\HmiMain.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/kzs_gl_es_20.h(310): fatal error C1189: #error :  GLES core symbols not loaded. Please define at least KZ_LINKED_GLES_SYMBOLS>=20 (..\..\..\src\MenuDisplay.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2653: “Light”: 不是类或命名空间名称 (..\..\..\src\HmiMain.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2065: “TypeCount”: 未声明的标识符 (..\..\..\src\HmiMain.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2975: “_Size”:“std::array”的模板参数无效，应为编译时常量表达式 (..\..\..\src\HmiMain.cpp)
+          D:\Microsoft Visual Studio 12.0\VC\include\array(18) : 参见“_Size”的声明
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(288): error C2065: “lightType”: 未声明的标识符 (..\..\..\src\HmiMain.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/kzs_gl_es_20.h(310): fatal error C1189: #error :  GLES core symbols not loaded. Please define at least KZ_LINKED_GLES_SYMBOLS>=20 (..\..\..\src\HmiMain.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(286): error C2653: “Light”: 不是类或命名空间名称 (..\..\..\src\DisplayCtrl.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(286): error C2061: 语法错误: 标识符“Type” (..\..\..\src\DisplayCtrl.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2653: “Light”: 不是类或命名空间名称 (..\..\..\src\DisplayCtrl.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2065: “TypeCount”: 未声明的标识符 (..\..\..\src\DisplayCtrl.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(353): error C2975: “_Size”:“std::array”的模板参数无效，应为编译时常量表达式 (..\..\..\src\DisplayCtrl.cpp)
+          D:\Microsoft Visual Studio 12.0\VC\include\array(18) : 参见“_Size”的声明
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/shader.hpp(288): error C2065: “lightType”: 未声明的标识符 (..\..\..\src\DisplayCtrl.cpp)
+D:\KanziWorkspace_3_6_14_39\Engine\include\kanzi/core.ui/platform/graphics_backend/gl/kzs_gl_es_20.h(310): fatal error C1189: #error :  GLES core symbols not loaded. Please define at least KZ_LINKED_GLES_SYMBOLS>=20 (..\..\..\src\DisplayCtrl.cpp)

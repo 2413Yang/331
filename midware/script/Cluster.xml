@@ -1,0 +1,64 @@
+<!-- 
+1.格式说明
+a.不支持结构体嵌套
+b.在生成identify变量名时，程序会根据大写字母分割字符串
+
+2.关键字说明
+a.type属性是关键字，用于标识参数类型
+b.identifyType属性是关键字，用于指定list item中identify的类型，默认为string
+c.identify属性是关键字，用于定位list中指定的identify item
+d.stuName属性是关键字，用于指定结构体名，默认为节点名称
+
+ -->
+
+<RootPage>
+	<DailGauge>
+		<VehicleSpeed type="string">90.0</VehicleSpeed>
+		<VehicleSpeedPercent type="float">90.0</VehicleSpeedPercent>
+		<EngineSpeed type="string">20.0</EngineSpeed>
+		<EngineSpeedPercent type="float">20.0</EngineSpeedPercent>
+		<FuelPercent type="float">75.0</FuelPercent>
+		<WaterTempPercent type="float">75.0</WaterTempPercent>
+	</DailGauge>
+	<GeneralInfo>
+		<Gear type="string">P</Gear>
+		<CurTime type="string">00:00</CurTime>
+		<OutsideTemp type="string">25.6</OutsideTemp>
+	</GeneralInfo>
+	<TripComputer>
+		<TripA type="string">1.0</TripA>
+		<Odograph type="string">10</Odograph>
+		<DrivenTime type="string">00:00</DrivenTime>
+		<AvgVehicleSpeed type="string">90.0</AvgVehicleSpeed>
+		<EnduranceMileage type="string">90</EnduranceMileage>
+		<InstantEnergyConsume type="string">5.8</InstantEnergyConsume>
+		<AvgEnergyConsume type="string">5.8</AvgEnergyConsume>
+	</TripComputer>
+	<Menu>
+		<Unit>
+			<MileageUnit type="string">km</MileageUnit>
+			<SpeedUnit type="string">km/h</SpeedUnit>
+			<EnergyConsumeUnit type="string">L/100km</EnergyConsumeUnit>
+			<TempUnit type="string">°C</TempUnit>
+		</Unit>
+	</Menu>
+	<Telltale type="list" identifyType="int">
+		<TurnLeft type="bool" identify="0x1001">false</TurnLeft>
+		<TurnRight type="bool" identify="0x1002">false</TurnRight>
+		<HighBeam type="bool" identify="0x1003">false</HighBeam>
+		<LowBeam type="bool" identify="0x1004">false</LowBeam>
+		<FrontFog type="bool" identify="0x1005">false</FrontFog>
+		<RearFog type="bool" identify="0x1006">false</RearFog>
+		<Position type="bool" identify="0x1007">false</Position>
+		<Ready type="bool" identify="0x1008">false</Ready>
+		<DoorOpen type="bool" identify="0x1009">false</DoorOpen>
+		<Brake type="bool" identify="0x100A">false</Brake>
+		<AirbagWarn type="bool" identify="0x100B">false</AirbagWarn>
+		<DrvSeatbelt type="bool" identify="0x100C">false</DrvSeatbelt>
+		<CopilotSeatbelt type="bool" identify="0x100D">false</CopilotSeatbelt>
+	</Telltale>
+	<PopWin type="list" identifyType="int">
+		<DoorOpen type="bool" identify="0x1001">false</DoorOpen>
+	</PopWin>
+	<PopWinOnTop type="int">0x1001</PopWinOnTop>
+</RootPage>

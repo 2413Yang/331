@@ -1,0 +1,56 @@
+#
+#	Telechips VPU Decoding Test Application
+#
+
+#########################################################
+#	Telechips Make File Initialize
+#########################################################
+TARGET := libvpuplayer.so
+TOP := ./
+
+INCLUDE_PATH 		:= $(TOP)include/
+COMMON_PATH 		:= $(TOP)common/
+LOCAL_PATH 			:= $(TOP)
+
+TARGET_CPU = cortex-a7
+TARGET_ARCH = armv7-a
+
+LIBS =
+
+#########################################################
+#	Header Include
+#########################################################
+INCLUDE += -I$(INCLUDE_PATH)
+INCLUDE += -I$(COMMON_PATH)
+
+#########################################################
+#	Source Files
+#########################################################
+SOURCE_FILES += $(COMMON_PATH)TCCMemory.c
+SOURCE_FILES += $(LOCAL_PATH)pmap.c
+SOURCE_FILES += $(LOCAL_PATH)vdec_k.c
+SOURCE_FILES += $(LOCAL_PATH)vpu_dec.c
+SOURCE_FILES += $(LOCAL_PATH)tcc_vdec_api.c
+
+local_c_sources := $(filter %.c, $(SOURCE_FILES))
+local_c_objects := $(local_c_sources:.c=.o)
+
+local_cpp_sources := $(filter %.cpp, $(SOURCE_FILES))
+local_cpp_objects := $(local_cpp_sources:.cpp=.o)
+
+OBJECTS = $(local_c_objects) $(local_cpp_objects)
+
+#########################################################
+#	Make
+#########################################################
+$(TARGET): $(OBJECTS)
+	$(CC) -o $(TARGET) -shared -fPIC -Xlinker --start-group $(OBJECTS) $(LDFLAGS) $(LIBS) -Xlinker --end-group 
+
+.c.o:
+	$(CC) $(CFLAGS)  -fPIC -c $(INCLUDE) -o $@ $<
+
+.cpp.o:
+	$(CXX) $(CXXFLAGS)  -fPIC -c $(INCLUDE) -o $@ $<
+
+clean :
+	rm $(OBJECTS) *.out $(TARGET) -rf;
